@@ -25,18 +25,18 @@ package ecs
 `
 
 var files []string = []string{
-	"https://raw.githubusercontent.com/rhinewg/Entitas-Go/master/ecs/entityPool.go",
-	"https://raw.githubusercontent.com/rhinewg/Entitas-Go/master/ecs/component.go",
-	"https://raw.githubusercontent.com/rhinewg/Entitas-Go/master/ecs/componentBitSet.go",
-	"https://raw.githubusercontent.com/rhinewg/Entitas-Go/master/ecs/componentPool.go",
-	"https://raw.githubusercontent.com/rhinewg/Entitas-Go/master/ecs/events.go",
-	"https://raw.githubusercontent.com/rhinewg/Entitas-Go/master/ecs/contexts.go",
-	"https://raw.githubusercontent.com/rhinewg/Entitas-Go/master/ecs/entity.go",
-	"https://raw.githubusercontent.com/rhinewg/Entitas-Go/master/ecs/entityBase.go",
-	"https://raw.githubusercontent.com/rhinewg/Entitas-Go/master/ecs/matcher.go",
-	"https://raw.githubusercontent.com/rhinewg/Entitas-Go/master/ecs/group.go",
-	"https://raw.githubusercontent.com/rhinewg/Entitas-Go/master/ecs/collector.go",
-	"https://raw.githubusercontent.com/rhinewg/Entitas-Go/master/ecs/system.go",
+	"https://raw.githubusercontent.com/rhinewg/MyEntitas/master/ecs/entityPool.go",
+	"https://raw.githubusercontent.com/rhinewg/MyEntitas/master/ecs/component.go",
+	"https://raw.githubusercontent.com/rhinewg/MyEntitas/master/ecs/componentBitSet.go",
+	"https://raw.githubusercontent.com/rhinewg/MyEntitas/master/ecs/componentPool.go",
+	"https://raw.githubusercontent.com/rhinewg/MyEntitas/master/ecs/events.go",
+	"https://raw.githubusercontent.com/rhinewg/MyEntitas/master/ecs/contexts.go",
+	"https://raw.githubusercontent.com/rhinewg/MyEntitas/master/ecs/entity.go",
+	"https://raw.githubusercontent.com/rhinewg/MyEntitas/master/ecs/entityBase.go",
+	"https://raw.githubusercontent.com/rhinewg/MyEntitas/master/ecs/matcher.go",
+	"https://raw.githubusercontent.com/rhinewg/MyEntitas/master/ecs/group.go",
+	"https://raw.githubusercontent.com/rhinewg/MyEntitas/master/ecs/collector.go",
+	"https://raw.githubusercontent.com/rhinewg/MyEntitas/master/ecs/system.go",
 }
 
 func CreateEntitasLibFile() {
@@ -95,7 +95,7 @@ func CreateEntitasContextFile(context string, components []*Component, src []byt
 		// {const}
 		contextData = strings.Replace(contextData, "{context}", context[:len(context)-3], -1)
 		contextData = strings.Replace(contextData, "{componentCount}", fmt.Sprint(len(components)), -1)
-		contextData = strings.Replace(contextData, "//go:generate go run github.com/rhinewg/Entitas-Go", "", -1)
+		contextData = strings.Replace(contextData, "//go:generate go run github.com/rhinewg/MyEntitas", "", -1)
 		if i == 0 {
 			contextData = strings.Replace(contextData, "{const}", v.Name, -1)
 		} else {

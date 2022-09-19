@@ -1,3 +1,3 @@
-module github.com/rhinewg/Entitas-Go
+module github.com/rhinewg/MyEntitas
 
 go 1.17
