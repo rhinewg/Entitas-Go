@@ -29,7 +29,7 @@ func InitContext(context string) {
 		defer file.Close()
 
 		getter := strings.Replace(getContextTemplate, "{name}", context, -1)
-		body := strings.Replace(contextsTemplate, "//NEXT2", "CreateEntityBase("+context+"ComponentTotal),\n//NEXT2", -1)
+		body := strings.Replace(contextsTemplate, "//NEXT2", "CreateEntityBase("+context+"ComponentTotal),\n\t//NEXT2", -1)
 		body = strings.Replace(body, "{First}", context, -1)
 		contextData := header + body + getter
 
@@ -40,8 +40,8 @@ func InitContext(context string) {
 		strData := string(data)
 
 		getter := strings.Replace(getContextTemplate, "{name}", context, -1)
-		strData = strings.Replace(strData, "//NEXT2", "CreateEntityBase("+context+"ComponentTotal),\n//NEXT2", -1)
-		strData = strings.Replace(strData, "//NEXT1", context+"\n//NEXT2", -1)
+		strData = strings.Replace(strData, "//NEXT2", "CreateEntityBase("+context+"ComponentTotal),\n\t//NEXT2", -1)
+		strData = strings.Replace(strData, "//NEXT1", context+"\n\t//NEXT2", -1)
 		strData += getter
 
 		os.Remove("./Entitas/Contexts.go")
