@@ -1,3 +1,3 @@
-module github.com/Falldot/Entitas-Go
+module github.com/rhinewg/Entitas-Go
 
 go 1.17

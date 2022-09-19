@@ -25,18 +25,18 @@ package ecs
 `
 
 var files []string = []string{
-	"https://raw.githubusercontent.com/Falldot/Entitas-Go/master/ecs/entityPool.go",
-	"https://raw.githubusercontent.com/Falldot/Entitas-Go/master/ecs/component.go",
-	"https://raw.githubusercontent.com/Falldot/Entitas-Go/master/ecs/componentBitSet.go",
-	"https://raw.githubusercontent.com/Falldot/Entitas-Go/master/ecs/componentPool.go",
-	"https://raw.githubusercontent.com/Falldot/Entitas-Go/master/ecs/events.go",
-	"https://raw.githubusercontent.com/Falldot/Entitas-Go/master/ecs/contexts.go",
-	"https://raw.githubusercontent.com/Falldot/Entitas-Go/master/ecs/entity.go",
-	"https://raw.githubusercontent.com/Falldot/Entitas-Go/master/ecs/entityBase.go",
-	"https://raw.githubusercontent.com/Falldot/Entitas-Go/master/ecs/matcher.go",
-	"https://raw.githubusercontent.com/Falldot/Entitas-Go/master/ecs/group.go",
-	"https://raw.githubusercontent.com/Falldot/Entitas-Go/master/ecs/collector.go",
-	"https://raw.githubusercontent.com/Falldot/Entitas-Go/master/ecs/system.go",
+	"https://raw.githubusercontent.com/rhinewg/Entitas-Go/master/ecs/entityPool.go",
+	"https://raw.githubusercontent.com/rhinewg/Entitas-Go/master/ecs/component.go",
+	"https://raw.githubusercontent.com/rhinewg/Entitas-Go/master/ecs/componentBitSet.go",
+	"https://raw.githubusercontent.com/rhinewg/Entitas-Go/master/ecs/componentPool.go",
+	"https://raw.githubusercontent.com/rhinewg/Entitas-Go/master/ecs/events.go",
+	"https://raw.githubusercontent.com/rhinewg/Entitas-Go/master/ecs/contexts.go",
+	"https://raw.githubusercontent.com/rhinewg/Entitas-Go/master/ecs/entity.go",
+	"https://raw.githubusercontent.com/rhinewg/Entitas-Go/master/ecs/entityBase.go",
+	"https://raw.githubusercontent.com/rhinewg/Entitas-Go/master/ecs/matcher.go",
+	"https://raw.githubusercontent.com/rhinewg/Entitas-Go/master/ecs/group.go",
+	"https://raw.githubusercontent.com/rhinewg/Entitas-Go/master/ecs/collector.go",
+	"https://raw.githubusercontent.com/rhinewg/Entitas-Go/master/ecs/system.go",
 }
 
 func CreateEntitasLibFile() {
