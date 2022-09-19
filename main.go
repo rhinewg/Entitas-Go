@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/rhinewg/Entitas-Go/generator"
+	"github.com/rhinewg/MyEntitas/generator"
 )
 
 func main() {
