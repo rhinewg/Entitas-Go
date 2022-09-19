@@ -95,7 +95,7 @@ func CreateEntitasContextFile(context string, components []*Component, src []byt
 		// {const}
 		contextData = strings.Replace(contextData, "{context}", context[:len(context)-3], -1)
 		contextData = strings.Replace(contextData, "{componentCount}", fmt.Sprint(len(components)), -1)
-		contextData = strings.Replace(contextData, "//go:generate go run github.com/Falldot/Entitas-Go", "", -1)
+		contextData = strings.Replace(contextData, "//go:generate go run github.com/rhinewg/Entitas-Go", "", -1)
 		if i == 0 {
 			contextData = strings.Replace(contextData, "{const}", v.Name, -1)
 		} else {
