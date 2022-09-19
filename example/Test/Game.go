@@ -1,6 +1,6 @@
 package main
 
-//go:generate go run github.com/Falldot/Entitas-Go
+//go:generate go run github.com/rhinewg/MyEntitas
 
 type Position struct {
 	X, Y float64
